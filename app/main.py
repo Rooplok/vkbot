@@ -21,7 +21,7 @@ def main():
     log = logging.getLogger(__name__)
 
     settings = Settings()  # читает .env
-    bot = Bot(token=settings.vk_group_token)
+    bot = Bot(token=settings.VK_GROUP_TOKEN)
 
     register_handlers(bot, settings)
 
